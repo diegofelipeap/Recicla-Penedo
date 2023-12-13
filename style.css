@@ -1,0 +1,164 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 44px 0 144px 76px
+}
+
+a {
+    color: #989D9C;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    cursor: pointer;
+    margin-right: 23px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: rgb(132, 131, 131);
+}
+
+a:first-child {
+    color: rgb(132, 131, 131)
+}
+
+.img-logo {
+    width: 520px;
+    height: 500px;
+    margin-left: 125px;
+    margin-bottom: 100px;
+    display: inline-block;
+    transition: transform 0.5s ease, filter 0.5s ease, opacity 0.9s ease, color 1s ease;
+}
+
+.img-logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    opacity: 1;
+}
+
+section {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    color: #515151;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 150px;
+}
+
+p {
+
+    color: #848484;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+    text-align: justify;
+}
+
+.main-button {
+    width: 239px;
+    height: 64px;
+    border-radius: 30px;
+    border: none;
+    background: #ADFF00;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    transition: background 0.3s ease;
+}
+
+.main-button:hover {
+    background: rgb(0, 255, 38);
+    box-shadow: 0 0 10px rgb(0, 255, 38);
+}
+
+#link-child:nth-child(2) {
+    color: #000;
+}
+
+#link-3child:nth-child(3) {
+    color: #000;
+}
+#link-4child:nth-child(4){
+    color: #000;
+}
+
+
+
+@media screen and (max-width:900px) and (orientation:portrait) {
+
+    nav {
+        display: inline-flex;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    a {
+        font-size: 10px;
+        line-height: 0;
+    }
+
+    main {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: static;
+
+    }
+
+    .img-logo {
+        margin: 50% 0 0 20%;
+        position: relative;
+        left: 30px;
+        bottom: 50px;
+        width: auto;
+        height: 220px;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+
+    }
+
+
+    h1 {
+        display: none;
+    }
+
+
+    p {
+        margin-top: 0;
+        width: 240px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .p-contact {
+        display: none;
+    }
+
+    .main-button {
+        width: 150px;
+        height: auto;
+        position: relative;
+        left: 45px;
+        bottom: 40px;
+    }
+}
